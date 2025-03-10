@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div class="container">
+        <button class="btn" id="calculatorBtn">Калькулятор</button>
+    </div>
+
+    <div id="dialog">
+        <dialog open>
+            <div class="popup">
+                <a class="popup-cross">+</a>
+                <div class="popup-title">Калькулятор</div>
+                <div class="popup-content">
+                    <h3><span>Шаг 1</span>  Добавьте товары или выберите заказ</h3>
+                    <div class="form-field-block">
+                        <label>Выберите заказ</label>
+                        <input type="text" class="form-input" />
+                    </div>
+                    <div id="products-block"></div>
+                    <div class="products-block-add">
+                        <a onclick="addNewProduct()" title="Добавить товар">+</a>
+                        <h4>Добавить товар</h4>
+                    </div>
+                    <div class="form-field-row">
+                        <div class="form-field-block" style="flex-basis: calc(50% - 16px);">
+                            <label>Итого: объем, см<sup></sup></label>
+                            <input type="text" readonly="" class="form-input" id="product-volume-all" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+    </div>
+    
+</body>
+</html>
